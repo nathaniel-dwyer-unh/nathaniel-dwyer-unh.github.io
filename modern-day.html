@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Yoyo in the Modern Day</title>
+    <meta charset="utf-8">
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="NTD_CSS-large.css">
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="screen and (min-width: 711px) and (max-width: 1279px)" href="NTD_CSS-medium.css">
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="screen and (max-width: 710px)" href="NTD_CSS-small.css">
+    <script>
+        /* When the user clicks on the mobile menu button, 
+                    toggle between hiding and showing the dropdown content */
+        function showDropdown() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            // Close the mobile dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu-icon')) {
+                var dropdowns = document.getElementsByClassName("nav-item-div");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="nav-header">
+        <a href="index.html"><img class="logo" src="images/logo-trans.png" alt="logo">
+        </a>
+        <div id="myDropdown" class="nav-item-div">
+            <nav>
+                <a class="nav-item not-current-page" href="history.html">History</a>
+                <a class="nav-item current-page" href="modern-day.html">Modern Day</a>
+                <a class="nav-item not-current-page" href="styles.html">Styles</a>
+                <a class="nav-item not-current-page" href="resources.html">Resources</a>
+                <a class="nav-item not-current-page" href="about.html">About the Author</a>
+            </nav>
+        </div>
+        <button class="menu-icon" onclick="showDropdown()"></button>
+    </div>
+    <br>
+    <br>
+    <div class="title-div">
+        <h1 class="title-text">The Evolution of the Spinning Top:</h1>
+        <h1 class="title-text">Yoyos in the Modern Day</h1>
+    </div>
+    <br>
+    <img class="intro-image" src="images/yoyo-trick.jpg" alt="Yoyo Trick">
+    <h5 class="credit-text">Image Source: <a href="https://www.flickr.com/photos/onigun/4740302333/in/photostream/">https://www.flickr.com/</a></h5>
+    <br>
+    <h2 class="subhead">The Modern Concept of the Yoyo</h2>
+    <p>Today, the yoyo is seen as a skill toy used both casually and professonaly. The way people have played with the toy has changed over the past several years, evolving it from a kids trinket to a competitor's tool. Today large (even worldwide) competitions are held for yoyoing where some of the best performers show off their years of practice and skill. There are now thousands of different yoyos that are used around the world by hundreds of yoyo professionals, or in the yoyoing world, "Throwers". Other than competitions, many of these throwers host after-school programs and events to spread the love of the hobby as well as teach new people how to yoyo.</p>
+    <br>
+    <br>
+</body>
+
+</html>
+
+<!--Nathaniel Dwyer
+
+This website will become a base for my final project, which will be about yoyos, their history, and how they are used today
+
+HTML Source Code completed 12/4/2017-->

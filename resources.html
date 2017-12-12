@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Yoyoing Resources</title>
+    <meta charset="utf-8">
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="NTD_CSS-large.css">
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="screen and (min-width: 711px) and (max-width: 1279px)" href="NTD_CSS-medium.css">
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="screen and (max-width: 710px)" href="NTD_CSS-small.css">
+    <script>
+        /* When the user clicks on the mobile menu button, 
+                    toggle between hiding and showing the dropdown content */
+        function showDropdown() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            // Close the mobile dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu-icon')) {
+                var dropdowns = document.getElementsByClassName("nav-item-div");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <body>
+        <div class="nav-header">
+            <a href="index.html"><img class="logo" src="images/logo-trans.png" alt="logo">
+            </a>
+            <div id="myDropdown" class="nav-item-div">
+                <nav>
+                    <a class="nav-item not-current-page" href="history.html">History</a>
+                    <a class="nav-item not-current-page" href="modern-day.html">Modern Day</a>
+                    <a class="nav-item not-current-page" href="styles.html">Styles</a>
+                    <a class="nav-item current-page" href="resources.html">Resources</a>
+                    <a class="nav-item not-current-page" href="about.html">About the Author</a>
+                </nav>
+            </div>
+            <button class="menu-icon" onclick="showDropdown()"></button>
+        </div>
+        <br>
+        <br>
+        <div class="title-div">
+            <h1 class="title-text">Want to Learn More?</h1>
+            <h1 class="title-text">Take a look at some of these resources!</h1>
+        </div>
+        <br>
+        <img class="intro-image" src="images/yoyo-collection.jpg" alt="Yoyo Collection">
+        <h5 class="credit-text">Image Source: <a href="http://onedropyoyos.com/yoyos/marquis/">http://onedropyoyos.com/</a></h5>
+        <br>
+        <p>
+            If you want to try yoyoing yourself, try visiting your local hobby shop and ask if the have a beginner’s yoyo you can buy. Most toy stores have a decent selection of yoyos to choose from.
+        </p>
+        <br>
+        <p>
+            A great way to learn is to learn by observation. Check out some of these videos to help you get started:
+        </p>
+        <br>
+        <iframe src="https://www.youtube.com/embed/cEtZBXKBY_8" allowfullscreen></iframe>
+        <br>
+        <p>
+            After that, you can look into getting a more advanced yoyo and learn some advanced tricks. My personal favorite website to get my yoyos and supplies from is <a href="https://yoyoexpert.com/">Yoyoexpert.com</a>. There they have a wide variety of products to choose from, Any of the $30-$50 range yoyos from either Duncan or YoyoFactory are good choices. Their site also has a section dedicated to learning new tricks if you want to check that out too (<a href="https://yoyoexpert.com/learn/">Yoyoexpert Trick Tutorials</a>).
+        </p>
+        <br>
+        <h2 class="subhead">Bibliography</h2>
+        <p><a href="http://www.yoyomuseum.com/museum_view.php?action=profiles&subaction=yoyo">http://www.yoyomuseum.com</a> - The History of the Yoyo</p>
+        <br>
+        <br>
+    </body>
+
+</html>
+
+<!--Nathaniel Dwyer
+
+This website will become a base for my final project, which will be about yoyos, their history, and how they are used today
+
+HTML Source Code completed 12/4/2017-->

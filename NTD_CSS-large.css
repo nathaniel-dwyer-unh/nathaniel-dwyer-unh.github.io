@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    cursor: url(images/website-cursor-small.cur), auto;
+    /*specifies the design for the mouse cursor while the user is on the webpage*/
+}
+body {
+    background-image: url(images/backdrop-linen.jpg);
+    font-family: arial;
+    color: white;
+    margin: 0px;
+}
+h1 {
+    color: limegreen;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+iframe {
+    display: block;
+    margin: auto;
+    border: 0;
+    width: 1200px;
+    height: 675px;
+    /*Youtube videos are a 16:9 ratio*/
+}
+p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+a {
+    color: #ff33cc;
+}
+a > .logo {
+    margin-left: 75px;
+    height: 100px;
+    width: 100px;
+}
+.credit-text {
+    text-align: center;
+    font-style: italic;
+}
+.intro-image {
+    border: 5px solid limegreen;
+    border-radius: 15px;
+    margin: 0px auto;
+    display: block;
+    width: 40%;
+}
+.logo {
+    width: 8%;
+    height: 8%;
+}
+.logo:hover {
+    animation-name: logo-fade;
+    /*refer to @keyframes at the bottom of this file*/
+    
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+.menu-icon {
+    display: none;
+}
+.nav-item-div {
+    margin: auto;
+}
+.nav-item {
+    color: limegreen;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vw;
+    /*vw = % of viewport width*/
+    
+    margin: auto 40px auto 40px;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    /*border is invisible*/
+    
+    border-radius: 10px;
+}
+.not-current-page:hover {
+    /*this is so that when the user hovers over the navigation links they will fade to a darker color*/
+    
+    animation-name: nav-fade;
+    /*refer to @keyframes at the bottom of this file*/
+    
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    /*this is so that the animation pasues on the last frame*/
+}
+.nav-header {
+    display: flex;
+    background: linear-gradient(#454545, #252525);
+    /*applies a gradient background*/
+    
+    border: 1px solid #252525;
+    border-radius: 70px 70px 70px 70px;
+    box-shadow: 0px 5px 30px #000000;
+}
+.subhead {
+    color: limegreen;
+    font-style: italic;
+}
+.title-text {
+    font-weight: bold;
+    font-size: 2vw;
+}
+.title-div {
+    border: 5px solid limegreen;
+    border-radius: 15px;
+    width: 30%;
+    margin: auto;
+}
+.current-page {
+    color: #029d02;
+}
+@keyframes nav-fade {
+    from {
+        color: limegreen;
+    }
+    to {
+        color: #029d02;
+    }
+}
+@keyframes logo-fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.7;
+    }
+}
+/*just a note: change all pixel mesurement to percentage ones; it will make the whole website scaleable*/
+/*link the website logo to the home page; index.html*/

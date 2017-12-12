@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Yoyo Styles of Play</title>
+    <meta charset="utf-8">
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="NTD_CSS-large.css">
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="screen and (min-width: 711px) and (max-width: 1279px)" href="NTD_CSS-medium.css">
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="screen and (max-width: 710px)" href="NTD_CSS-small.css">
+    <script>
+        /* When the user clicks on the mobile menu button, 
+                    toggle between hiding and showing the dropdown content */
+        function showDropdown() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            // Close the mobile dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu-icon')) {
+                var dropdowns = document.getElementsByClassName("nav-item-div");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="nav-header">
+        <a href="index.html"><img class="logo" src="images/logo-trans.png" alt="logo">
+        </a>
+        <div id="myDropdown" class="nav-item-div">
+            <nav>
+                <a class="nav-item not-current-page" href="history.html">History</a>
+                <a class="nav-item not-current-page" href="modern-day.html">Modern Day</a>
+                <a class="nav-item current-page" href="styles.html">Styles</a>
+                <a class="nav-item not-current-page" href="resources.html">Resources</a>
+                <a class="nav-item not-current-page" href="about.html">About the Author</a>
+            </nav>
+        </div>
+        <button class="menu-icon" onclick="showDropdown()"></button>
+    </div>
+    <br>
+    <br>
+    <div class="title-div">
+        <h1 class="title-text">Expression Through Practice:</h1>
+        <h1 class="title-text">Styles of Yoyoing</h1>
+    </div>
+    <br>
+    <img class="intro-image" src="images/yoyo-freehand.jpg" alt="Freehand Yoyoing">
+    <h5 class="credit-text">Image Source: <a href="https://flamesngames.co.uk/">flamesngames.co.uk</a></h5>
+    <br>
+    <p>There are several different styles of play when it comes to yoyoing, but for now we will just focus on the 5 most popular styles of play: 1A, 2A, 3A, Offstring, and Freehand.</p>
+    <br>
+    <h2 class="subhead">1A: Where it All Started</h2>
+    <p>1A is by far the most recognizable form of yoyoing. In this style you have one yoyo connected to your hand with a string.</p>
+    <br>
+    <!-- Gentry Stein 2014 Worlds 1A 1st Place Video -->
+    <iframe src="https://www.youtube.com/embed/Nx82HVIZpBs?rel=0" allowfullscreen></iframe>
+    <br>
+    <h2 class="subhead">2A and 3A: Double the Trouble</h2>
+    <p>2A and 3A are similar styles of play where you control 2 yoyos at the same time. The only difference between these two styles is the types of tricks that they are associated with. 2A implements looping tricks where the user throws and retrieves the yoyo in a repetitive fashion; 3A implements string tricks where the user bounces and rebounds the yoyos off of multiple strings.</p>
+    <br>
+    <!-- Shinji Saito 2011 Worlds 2A 1st Place Video -->
+    <iframe src="https://www.youtube.com/embed/o-dqtfmIs2I?rel=0" allowfullscreen></iframe>
+    <br>
+    <!-- Hank Freeman 2011 Worlds 3A 1st Place Video -->
+    <iframe src="https://www.youtube.com/embed/IcZDpA80VDI?rel=0" allowfullscreen></iframe>
+    <br>
+    <h2 class="subhead">Offstring (4A): Breaking New Boundaries</h2>
+    <p>Offstring, also known as 4A, is a style of play where the user controls a single yoyo, but that yoyo is not connected to the string.</p>
+    <br>
+    <!-- Ben Conde 2011 Worlds 4A Video -->
+    <iframe src="https://www.youtube.com/embed/UbgrRaO169M?rel=0" allowfullscreen></iframe>
+    <br>
+    <h2 class="subhead">Freehand (5A): Look Ma, No Hands!</h2>
+    <p>Freehand, also known as 5A, is a style of play where the user controls a single yoyo, but the user’s hand is no longer connected to the string.</p>
+    <br>
+    <!-- Jake Elliot 2015 Worlds 5A 1st Place Video -->
+    <iframe src="https://www.youtube.com/embed/rg17FtXw8Q0?rel=0" allowfullscreen></iframe>
+    <br>
+    <br>
+</body>
+
+</html>
+
+<!--Nathaniel Dwyer
+
+This website will become a base for my final project, which will be about yoyos, their history, and how they are used today
+
+HTML Source Code completed 12/4/2017-->
